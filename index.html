@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="./anime.min.js"></script>
+  <title>ポートフォリオ</title>
+</head>
+<header>
+  <h2 class="title">hashimoto</h2>
+  <ul>
+    <li id="skilTag" class="skils-tag">スキル</li>
+    <li id="filmTag" class="film-tag">作品集</li>
+    <button id="contactBtn" class="contact-btn">お問い合わせ</button>
+  </ul>
+</header>
+<body>
+  <div class="introduction">
+    <h2 class="scroll-in intro-title hidden">自己紹介</h2>
+    <div class="scroll-in intro-text hidden">
+      <h3 class="text-title">生年月日</h3> ・ 2004/09/23<br><br>
+      <h3 class="text-title">経歴</h3> ・ 工業高校の機械科を卒業後、専門学校に進学。<br>将来が不安になり半年で退学し、プログラミングスクールに入学。2023年の11月に卒業。<br><br>
+      <h3 class="text-title">業務経験</h3> ・ 1年半、自転車店で接客と修理のアルバイト<br><br>
+      <h3 class="text-title">長所</h3> ・ 新しい技術等の習得スピードと応用力<br><br>
+      <h3 class="text-title">大切にしている考え</h3> ・ 人間関係を大切にすること、何事もまずはやってみること、とにかく楽しむこと<br>
+    </div>
+  </div>
+  <div class="skils">
+    <div class="scroll-in skils-text hidden">
+      <h3 class="text-title">言語</h3> ・ HTML, CSS, Javascript, Ruby<br><br>
+      <h3 class="text-title">フレームワーク・ライブラリ</h3> ・ Ruby on Rails, Anime.js<br><br>
+      <h3 class="text-title">資格</h3> ・ 普通自動車第一種免許, 情報技術検定3級, 基礎・機械製図検定,<br>
+                                  <br> 丙種危険物取扱者, ガス溶接技能講習, 計算技術検定3級 <br><br>
+      <h3 class="text-title">その他の知識</h3> ・ 工学系の基礎, PC(ハード)とデバイス, 自転車<br><br>
+    </div>
+    <h2 class="scroll-in skils-title hidden">技術・資格・知識</h2>
+  </div>
+  <div class="film">
+    <h2 class="scroll-in film-title hidden">作品集</h2>
+    <div class="scroll-in films hidden">
+      <a href="https://github.com/komachihashimoto/ITyping2.0">
+        <img src="./ITyping.png" alt="ITyping">
+      </a>
+      <a href="https://github.com/komachihashimoto/keyboard-app">
+        <img src="./着せ替えキーボード.png" alt="着せ替えキーボード">
+      </a>
+    </div>
+  </div>
+  <div class="form">
+    <h3 class="contact-title">お問い合わせはこちら</h3>
+    <form class="forms" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe_PffPszSAzXRQUiK1y-hhizcJubQKLzuMyaPoj6AOWMlhnw/formResponse" method="post">
+      <input type="text" name="entry.2005620554" class="string-box" value="" placeholder="Your Name"><br>
+      <input type="email" name="entry.1045781291" class="string-box" value="" placeholder="Your Email"><br>
+      <input type="text" name="entry.1166974658"  class="string-box" value="" placeholder="Subject"><br>
+      <textarea name="entry.839337160" class="text-box" rows="5" cols="30" placeholder="messages..."></textarea><br>
+      <button type="submit" name="submit" class="submit-btn btn-info ">送信</button>
+    </form>
+  </div>
+  <script src="./main.js"></script>
+</body>
+<footer>2023 hashimoto</footer>
+</html>
