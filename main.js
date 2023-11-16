@@ -32,7 +32,7 @@ anime({
                           document.body.style.overflow = '';
                       }
                     });
-                }, 300);
+                }, 10);
             }
           });
       }, 600);
@@ -85,3 +85,4 @@ document.getElementById("contactBtn").addEventListener("click", function() {
   let element = document.querySelector(".form");
   element.scrollIntoView({behavior: "smooth"});
 });
+
