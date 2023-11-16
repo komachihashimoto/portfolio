@@ -1,3 +1,44 @@
+document.body.style.overflow = 'hidden';
+
+//アニメーションを定義
+anime({
+    targets: '.loading .el',
+    translateY: [-1000,0],
+    opacity: [0,1],
+    duration: 1500,
+    delay: anime.stagger(100),
+    easing: 'easeInOutElastic',
+    complete: function(anim) {
+      // アニメーションが完了したら1秒待つ
+      setTimeout(function() {
+          // 1秒後に逆のアニメーションを開始
+          anime({
+              targets: '.loading .el',
+              translateY: [0,-1000],
+              opacity: [1,0],
+              duration: 1500,
+              delay: anime.stagger(100),
+              easing: 'easeInOutElastic',
+              complete: function(anim) {
+                // 逆のアニメーションが完了したら1秒待つ
+                setTimeout(function() {
+                    // 1秒後にloadingクラスのheightを0にするアニメーションを開始
+                    anime({
+                        targets: '.loading',
+                        height: 0,
+                        duration: 1000,
+                        easing: 'linear',
+                        complete: function(anim) {
+                          document.body.style.overflow = '';
+                      }
+                    });
+                }, 300);
+            }
+          });
+      }, 600);
+  }
+});
+
 //クラス名が「scroll-in」の要素を取得
 const objects = document.querySelectorAll('.scroll-in');
 

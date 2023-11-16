@@ -12,7 +12,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 30px 50px;
-  background-color: #191919;
+  background-color: #111111;
 }
 
 h2 {
@@ -26,6 +26,22 @@ ul {
 
 li {
   margin: 0 20px;
+}
+
+.loading {
+  background-color: #191919;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.words {
+  font-size: 3em;
+  letter-spacing: 0.2em;
 }
 
 .skils-tag {
@@ -319,7 +335,7 @@ img:hover {
 }
 
 footer {
-  background-color: #191919;
+  background-color: #111111;
   width: 100%;
   padding: auto;
 }
