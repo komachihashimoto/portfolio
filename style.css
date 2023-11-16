@@ -392,5 +392,5 @@ footer {
 }
 
 .child-left, .child-right {
-  transition: transform 0.15s linear;
+  transition: transform 0.2s linear;
 }
